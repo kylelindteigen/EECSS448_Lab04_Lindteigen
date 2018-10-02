@@ -1,0 +1,41 @@
+table, th, td
+{
+	border: 1px solid black;
+	font-size: 20px;
+	font-family: "Arial";
+}
+th, td
+{
+	background-color: #79e5a2;
+	align-self: auto;
+}
+input.UP
+{
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
+	font-size: 18px;
+	font-family: "Arial";
+}
+input[type=number].tableinput
+{
+	border: none;
+	width: 100%;
+	background-color: #88bde8;
+	font-size: 18px;
+	font-family: "Arial";
+}
+td.floor
+{
+	text-align: center;
+}
+td.blue
+{
+	background-color: #88bde8;
+}
+body
+{
+	font-size: 20px;
+	font-family: "Arial";
+}

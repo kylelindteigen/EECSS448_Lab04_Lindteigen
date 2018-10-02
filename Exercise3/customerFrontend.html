@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Purchase</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="formChecker.js"></script>
+</head>
+<body>
+	<header>Chair Store</header><br>
+	<form action="customerBackend.php" onsubmit="return formValidation();" method="post">
+		Username: <input type="text" id="UN" class = "UP"><br>
+		Password: <input type="password" id="PASS" name = "PASS" class = "UP"><br><br>
+		<table>
+			<tr>
+				<th></th>
+				<th>Quantity</th>
+				<th>Cost Per Item</th>
+			<tr>
+				<td>Low End Chair</td>
+				<td class = "blue"><input type="number" id = "Item1" name = "Item1" class = "tableinput"></td>
+				<td class = "blue">$25.00</td>
+			<tr>
+				<td>Normal Chair</td>
+				<td class = "blue"><input type="number" id = "Item2" name = "Item2" class = "tableinput"></td>
+				<td class = "blue">$75.00</td>
+			<tr>
+				<td>High End Chair</td>
+				<td class = "blue"><input type="number" id = "Item3" name = "Item3" class = "tableinput"></td>
+				<td class = "blue">$199.99</td>
+		</table><br>
+		Shipping<br>
+		<input type="radio" name="ship" value="7 Day" id = "ship1">Free 7 day<br>
+		<input type="radio" name="ship" value="Express" id = "ship2">$50.00 over night<br>
+		<input type="radio" name="ship" value="3 Day" id = "ship3">$5.00 three day<br><br>
+	<input type="submit" name="submit" value = "Make Purchase">
+	<button onclick="Reset()" type = "button">Reset</button>
+	</form>
+</body>
+</html>
